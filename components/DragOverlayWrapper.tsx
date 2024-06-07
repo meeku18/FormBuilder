@@ -2,7 +2,7 @@
 import { Active, DragOverlay, useDndMonitor } from "@dnd-kit/core"
 import { useState } from "react";
 
-export default function (){
+export function DragOverlayWrapper(){
     const [draggedItem,setdraggedItem] = useState<Active|null>(null);
 
     useDndMonitor({

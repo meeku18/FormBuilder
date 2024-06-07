@@ -4,7 +4,7 @@ import { FormElement } from "./FormElements";
 import { Button } from "./ui/button";
 import { useDraggable } from "@dnd-kit/core";
 
-export default function SiderBarBtnElement({
+export function SiderBarBtnElement({
   formElement,
 }: {
   formElement: FormElement;

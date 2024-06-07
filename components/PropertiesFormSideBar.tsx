@@ -3,7 +3,7 @@ import { useDesigner } from "./hooks/useDesigner";
 import { Button } from "./ui/button";
 import { AiOutlineClose } from "react-icons/ai";
 
-export default function(){
+export function PropertiesFormSideBar(){
     
     const { selectedElement,setSelectedElement } = useDesigner();
     if(!selectedElement) return null;

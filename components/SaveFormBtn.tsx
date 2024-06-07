@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { toast } from "./ui/use-toast";
 import { useTransition } from "react";  
 
-export default function({id}:{id:number}){
+export  function SaveFormBtn({id}:{id:number}){
     const {elements} =useDesigner();
     const [loading,startTransition] = useTransition();
 

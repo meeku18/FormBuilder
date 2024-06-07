@@ -1,12 +1,12 @@
 "use client";
 
 import { Form } from "@prisma/client";
-import PreviewDialogBtn from "./PreviewDialogBtn";
-import SaveFormBtn from "./SaveFormBtn";
+import {PreviewDialogBtn} from "./PreviewDialogBtn";
+import {SaveFormBtn} from "./SaveFormBtn";
 import PublishedFormBtn from "./PublishedFormBtn";
-import Designer from "./Designer";
+import {Designer} from "./Designer";
 import { DndContext, DragOverlay } from "@dnd-kit/core";
-import DragOverlayWrapper from "./DragOverlayWrapper";
+import {DragOverlayWrapper} from "./DragOverlayWrapper";
 import { useEffect } from "react";
 import { useDesigner } from "./hooks/useDesigner";
 import { Input } from "./ui/input";
@@ -15,7 +15,7 @@ import { toast } from "./ui/use-toast";
 import Link from "next/link";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
-export default function ({ form }: { form: Form }) {
+export function FormBuilder({ form }: { form: Form }) {
 
   const {setElements} = useDesigner();
 

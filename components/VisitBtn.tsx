@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { Button } from "./ui/button"
 
-export default function({shareUrl}:{shareUrl:string}){
+export function VisitBtn({shareUrl}:{shareUrl:string}){
     const [mounted,setMounted] = useState(false);
     useEffect(()=>{
         setMounted(true);

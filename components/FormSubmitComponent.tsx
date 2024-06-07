@@ -6,9 +6,9 @@ import { Button } from "./ui/button";
 import { ImSpinner2 } from "react-icons/im";
 import { toast } from "./ui/use-toast";
 import { SubmitForm } from "@/actions/form";
-import { Sumana } from "next/font/google";
 
-export default function ({
+
+export function FormSubmitComponent({
   formUrl,
   content,
 }: {

@@ -1,7 +1,7 @@
 import { GetFormById } from "@/actions/form";
-import FormBuilder from "@/components/FormBuilder";
+import {FormBuilder} from "@/components/FormBuilder";
 
-export async function page({params}:{params:{
+async function Builderpage({params}:{params:{
     id:string
 }}){  
     const {id} = params; 
@@ -15,3 +15,5 @@ export async function page({params}:{params:{
     }
     return <FormBuilder form={form}/>
 }
+
+export default Builderpage;

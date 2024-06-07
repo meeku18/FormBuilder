@@ -31,7 +31,7 @@ import { formSchema, formSchemaType } from "@/schema/formSchema";
 import { CreateForm } from "@/actions/form";
 import { useRouter } from "next/navigation";
 
-export default function () {
+export function CreateFormBtn() {
   const router = useRouter();
   const form = useForm<formSchemaType>({
     resolver: zodResolver(formSchema),

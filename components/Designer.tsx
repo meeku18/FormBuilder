@@ -1,6 +1,6 @@
 "use client";
 
-import DesignerSidebar from "./DesignerSidebar";
+import {DesignerSidebar} from "./DesignerSidebar";
 import { DragEndEvent, useDndMonitor, useDroppable } from "@dnd-kit/core";
 import {
   ElementsType,
@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 import { useDesigner } from "./hooks/useDesigner";
 ("./hooks/useDesigner");
 
-export default function Designer() {
+export function Designer() {
   const { elements, addElement, selectedElement, setSelectedElement } =
     useDesigner();
   console.log("Elements", elements);

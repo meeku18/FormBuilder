@@ -3,7 +3,7 @@ import { useDesigner } from "./hooks/useDesigner";
 import { Button } from "./ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
 
-export default function () {
+export function PreviewDialogBtn() {
   const { elements } = useDesigner();
 
   return (

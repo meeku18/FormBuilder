@@ -6,7 +6,7 @@ import { Input } from "./ui/input";
 import { ImShare } from "react-icons/im";
 import { toast } from "./ui/use-toast";
 
-export default function ({ shareUrl }: { shareUrl: string }) {
+export function FormLinkShare({ shareUrl }: { shareUrl: string }) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
