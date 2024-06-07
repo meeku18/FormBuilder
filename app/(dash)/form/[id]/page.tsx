@@ -24,8 +24,10 @@ import { Badge } from "@/components/ui/badge";
 import { formatDistanceToNow } from "date-fns";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ElementsType, FormElementInstance } from "@/components/FormElements";
-export default async function ({
+
+
+
+export async function page({
   params,
 }: {
   params: {

@@ -2,7 +2,7 @@ import { GetFormContentByUrl } from "@/actions/form";
 import { FormElementInstance } from "@/components/FormElements";
 import FormSubmitComponent from "@/components/FormSubmitComponent";
 
-export default async function SubmitPage({params}:{
+export async function SubmitPage({params}:{
     params:{
         formUrl:string
     }
