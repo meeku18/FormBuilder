@@ -1,4 +1,4 @@
-"use client"
+
 import { Active, DragOverlay, useDndMonitor } from "@dnd-kit/core"
 import { useState } from "react";
 
