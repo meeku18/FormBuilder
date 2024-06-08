@@ -124,6 +124,7 @@ export async function PublishForm(id:number){
 }
 
 export async function GetFormContentByUrl(formUrl:string){
+
     return await prisma.form.update({
         select:{
             content:true
@@ -137,6 +138,7 @@ export async function GetFormContentByUrl(formUrl:string){
             shareURL: formUrl
         }
     })
+    
 }
 
 export async function SubmitForm(formUrl:string,content:string){
