@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useEffect } from "react";
 
-export function Error({error}:{error:Error}) {
+function ErrorPage({error}:{error:Error}) {
     useEffect(()=>{
         console.log(error);
     },[error])
@@ -16,3 +16,4 @@ export function Error({error}:{error:Error}) {
     </div>
   );
 }
+export default ErrorPage;
