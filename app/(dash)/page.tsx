@@ -185,8 +185,8 @@ function FormCard({ form }: { form: Form }) {
           </Button>
         )}
         {!form.published && (
-          <Button variant={"secondary"}>
-            <Link href={`/builder/${form.id}`}>Edit Form {"->"}</Link>
+          <Button variant={"secondary"} asChild>
+            <Link href={`/builder/${form.id}`} >Edit Form {"->"}</Link>
           </Button>
         )}        
       </CardFooter>
