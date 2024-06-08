@@ -5,14 +5,19 @@ import {
   
 const isProtectedRoute = createRouteMatcher([
     '/',
-    '/builder', // Dashboard route
-    '/form',   // Profile route
+    '/builder',
+    '/form', 
 ]);
 
 export default clerkMiddleware((auth, req) => {
-    if (isProtectedRoute(req)) auth().protect();
+    if(isProtectedRoute(req)) auth().protect();
   });
 
-export const config = {
-  matcher: ['/((?!.*\\..*|_next).*)', '/', '/(api|trpc)(.*)'],
-};
+  export const config = {
+    // Update the matcher to explicitly exclude '/submit'
+    matcher: [
+      '/((?!.*\\..*|_next|submit).*)', // Exclude '/submit'
+      '/',
+      '/(api|trpc)(.*)'
+    ],
+  };
