@@ -85,7 +85,7 @@ export async function GetFormById(id:number){
     }
     return await prisma.form.findUnique({
         where:{
-            userId:user.id,
+            userId:user?.id,
             id
         }
     })
